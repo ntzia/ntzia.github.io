@@ -44,7 +44,7 @@ body {
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 20px; }
+  margin-bottom: 1.0em; }
 
 .alignright {
   float: right; }
@@ -274,7 +274,7 @@ div.equation {
   margin-left: 10px; }
 .profile img {
   box-shadow: 0 0 5px #828282;
-  width: 100%;}
+  width: 79%;}
 
 .address {
   font-family: monospace; }
@@ -411,6 +411,9 @@ div.equation {
 .right {
   float: right; }
 
+.left {
+  float: left; }
+
 .one {
   width: 33.33%; }
 
@@ -426,3 +429,11 @@ div.equation {
   text-align: center;
   vertical-align: middle;
   font-size: 12px; }
+
+
+#lastupdate {
+  list-style: none;
+  margin-top:1rem;
+  padding: 1.5rem 0rem;
+  font-size: 0.8rem;
+}
