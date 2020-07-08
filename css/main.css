@@ -1,0 +1,428 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/** Variables **********************************************/
+
+/* COLORS  
+$red:  #FF3636;
+$orange: #F29105;
+$blue: #2698BA;
+$green: #11D68B;
+$lime_green: #B7D12A;
+$purple: #B509AC;
+*/
+:root {
+  --theme-color: #F29105;
+}
+
+
+/* footer */
+/* navigation bar border */
+/* Set theme color *************************/
+/************************************************************/
+/**
+ * Basic styling
+ */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 100;
+  color: #666;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+  margin-bottom: 20px; }
+
+.alignright {
+  float: right; }
+
+hr {
+  /* Inset, by Dan Eden */
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  height: 0;
+  margin: 20px 0; }
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 50px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  margin-bottom: 20px; }
+
+/**
+ * Links
+ */
+a {
+  color: #666;
+  text-decoration: none;
+  /*
+  &:visited {
+      color: darken($brand-color, 15%);
+  }
+  */ }
+  a:hover {
+    color: var(--theme-color);
+    text-decoration: none; }
+
+article a, .news a {
+  color: var(--theme-color);
+  font-weight: 100; }
+  article a:hover, .news a:hover {
+    text-decoration: underline; }
+
+
+/* ----------------------------------------------------------------------------
+    Paper and People format (even without thumbnails)
+----------------------------------------------------------------------------- */
+.paper {
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 1.0em;
+  clear: left;
+}
+
+.paper .thumb:before {
+  content: "•";
+  margin-left: 10px;
+  padding-right: 0px;
+}
+
+.paper .thumb {
+  float: left;
+  margin-top: 3px;
+  font-size: 2em;
+  line-height: 1.2rem;
+}
+
+.paper .entry {
+  line-height: 1.2em;
+  margin-left: 3rem;
+}
+
+.paper .title {
+  font-weight: 600;
+}
+
+.paper .venue {
+  font-style: italic;
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #666;
+  border-left: 10px solid #ddd;
+  padding-left: 25px;
+  font-size: 18px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: #ddd; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * Equations
+ */
+div.equation {
+  margin: 20px 0; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(800px - (50px * 2));
+  max-width: calc(800px - (50px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (50px));
+      max-width: calc(800px - (50px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Clearfix
+ */
+.clearfix:before, .wrapper:before, .clearfix:after, .wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*****************************************************************************
+ * Header
+ *****************************************************************************/
+.site-header {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  opacity: 0.75;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 56px;
+  width: 100%;
+  z-index: 50; }
+
+.site-title {
+  font-size: 20px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0; }
+  .site-title:hover {
+    text-decoration: none;
+    color: var(--theme-color); }
+
+.site-nav {
+  float: right;
+  line-height: 56px; }
+  .site-nav .page-link {
+    line-height: 1.5em; }
+    .site-nav .page-link:not(:first-child) {
+      margin-left: 10px; }
+  @media screen and (max-width: 600px) {
+    .site-nav {
+      position: fixed;
+      top: 0px;
+      right: 10px;
+      text-align: right; }
+      .site-nav:hover .trigger {
+        display: block;
+        padding-bottom: 5px; }
+      .site-nav .page-link {
+        display: line; } }
+
+.header-bar {
+  left: 0px;
+  top: 0px;
+  position: relative;
+  font-size: 20px;
+  display: block;
+  opacity: 0.75;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  line-height: 3em;
+  z-index: 25; }
+  .header-bar h1 {
+    color: var(--theme-color);
+    font-size: 75px; }
+  .header-bar h2 {
+    font-size: 25px; }
+
+/*****************************************************************************
+ * Profile
+ *****************************************************************************/
+.profile .left {
+  margin-right: 10px; }
+.profile .right {
+  margin-left: 10px; }
+.profile img {
+  box-shadow: 0 0 5px #828282;
+  width: 100%;}
+
+.address {
+  font-family: monospace; }
+  .address p {
+    margin: 0; }
+
+/*****************************************************************************
+ * News
+ *****************************************************************************/
+.news {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 20px;
+   }
+  .news h2 {
+    margin-bottom: 10px; }
+  .news table {
+    border-collapse: collapse;
+    width: 100%; }
+    .news table .date {
+      width: 20%; }
+    .news table .announcement {
+      width: 80%; }
+    .news table tr {
+      text-align: left; }
+    .news table td {
+      padding: 5px 0; }
+
+/*****************************************************************************
+ * Footer
+ *****************************************************************************/
+.site-footer {
+  border-top: 1px solid #333;
+  background-color: #333;
+  color: #aaa;
+  font-size: 72%;
+  padding: 2px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%; }
+  .site-footer p {
+    margin-bottom: 0; }
+  .site-footer a {
+    color: #fff; }
+  .site-footer a:hover {
+    color: var(--theme-color); }
+
+/*****************************************************************************
+ * Page content
+ *****************************************************************************/
+.page-content {
+  padding: 100px 0;
+  /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
+
+.page-heading {
+  font-size: 20px; }
+
+.post-list {
+  margin: 0px 0;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: 40px; }
+
+.contacticon {
+  display: block;
+  font-size: 60px;
+  margin: 10px; }
+
+.center {
+  text-align: center; }
+
+/*****************************************************************************
+ * Posts
+ *****************************************************************************/
+.post-header {
+  margin-bottom: 40px; }
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 10px; }
+  @media screen and (max-width: 800px) {
+    .post-title {
+      font-size: 36px; } }
+
+.post-content h2 {
+  font-size: 42px; }
+  @media screen and (max-width: 800px) {
+    .post-content h2 {
+      font-size: 28px; } }
+.post-content h3 {
+  font-size: 30px; }
+  @media screen and (max-width: 800px) {
+    .post-content h3 {
+      font-size: 22px; } }
+.post-content h4 {
+  font-size: 20px; }
+  @media screen and (max-width: 800px) {
+    .post-content h4 {
+      font-size: 18px; } }
+
+.post-meta {
+  color: #828282;
+  font-size: 14px;
+  margin-bottom: 0px; }
+
+.post-link {
+  display: block;
+  font-size: 42px; }
+
+/**
+ * Portfolio pages **********************************************************
+*/
+.blankbox {
+  background: var(--theme-color); }
+
+.img_row {
+  height: 275px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 5px; }
+
+.col {
+  width: 100%;
+  height: 100%;
+  float: left;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 5px; }
+
+.right {
+  float: right; }
+
+.one {
+  width: 33.33%; }
+
+.two {
+  width: 66.66%; }
+
+.three {
+  width: 100%; }
+
+.caption {
+  height: 100%;
+  color: #aaa;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px; }
