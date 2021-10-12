@@ -134,12 +134,12 @@ article a, .news a {
 }
 
 .paper .title {
-  font-weight: 600;
+  font-weight: 1000;
 }
 
 .paper .venue {
-  font-family: Garamond, Serif;
-  font-size: 1.2em;
+  font-family: Arial Narrow, sans-serif;
+  font-size: 1.15em;
 }
 
 .paper .authors {
