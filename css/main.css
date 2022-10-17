@@ -18,7 +18,7 @@ $lime_green: #B7D12A;
 $purple: #B509AC;
 */
 :root {
-  --theme-color: #F29105;
+  --theme-color: #D47E05;
 }
 
 
@@ -86,9 +86,11 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
+ 
 a {
-  color: #666;
-  text-decoration: none;
+	color: var(--theme-color);
+	font-weight: 100;
+	text-decoration: none;
   /*
   &:visited {
       color: darken($brand-color, 15%);
@@ -96,12 +98,6 @@ a {
   */ }
   a:hover {
     color: var(--theme-color);
-    text-decoration: none; }
-
-article a, .news a {
-  color: var(--theme-color);
-  font-weight: 100; }
-  article a:hover, .news a:hover {
     text-decoration: underline; }
 
 
@@ -138,13 +134,30 @@ article a, .news a {
 }
 
 .paper .venue {
-  font-family: Arial Narrow, sans-serif;
-  font-size: 1.15em;
+  font-family: sans-serif;
 }
 
 .paper .authors {
 
 }
+
+.paper .links a {
+  	color: #666;
+	font-weight: 100;
+	text-decoration: none; }
+
+.paper .links a:hover {
+  	color: var(--theme-color);
+    text-decoration: underline; }
+
+.paper .venue a {
+  	color: #666;
+	font-weight: 100;
+	text-decoration: none; }
+
+.paper .venue a:hover {
+  	color: var(--theme-color);
+    text-decoration: underline; }
 
 
 /**
@@ -189,16 +202,16 @@ div.equation {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (50px * 2));
-  max-width: calc(800px - (50px * 2));
+  max-width: -webkit-calc(1100px - (50px * 2));
+  max-width: calc(1100px - (50px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
   padding-left: 50px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1100px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (50px));
-      max-width: calc(800px - (50px));
+      max-width: -webkit-calc(1100px - (50px));
+      max-width: calc(1100px - (50px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -251,7 +264,18 @@ div.equation {
         padding-bottom: 5px; }
       .site-nav .page-link {
         display: line; } }
+		
+.site-nav a{
+  	color: #666;
+	font-weight: 100;
+	text-decoration: none; 
+}
 
+.site-nav a:hover {
+  	color: var(--theme-color);
+    text-decoration: underline; }
+}
+	
 .header-bar {
   left: 0px;
   top: 0px;
@@ -420,14 +444,14 @@ div.equation {
   float: left; }
 
 .one {
-  width: 33.33%; }
+  width: 25%; }
 
 .two {
-  width: 66.66%; }
+  width: 50%; }
 
 .three {
-  width: 100%; }
-
+  width: 75%; }
+  
 .caption {
   height: 100%;
   color: #aaa;
