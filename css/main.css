@@ -135,6 +135,7 @@ a {
 
 .paper .venue {
   font-family: sans-serif;
+  color: var(--theme-color);
 }
 
 .paper .authors {
