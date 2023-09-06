@@ -38,6 +38,10 @@ body {
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
+  b {
+    color: #4444a5
+  }
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
