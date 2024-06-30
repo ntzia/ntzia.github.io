@@ -18,7 +18,7 @@ $lime_green: #B7D12A;
 $purple: #B509AC;
 */
 :root {
-  --theme-color: #D47E05;
+  --theme-color: #00008B;
 }
 
 
@@ -39,7 +39,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
   b {
-    color: #4444a5
+    color: #CD5C5C
   }
 
 /**
